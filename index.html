@@ -11,3 +11,11 @@ layout: default
 <p>In the meantime, check us out on <a href="http://meetup.com/makerbar">Meetup</a> or on our <a href="https://groups.google.com/forum/#!forum/makerbar">Google Group / Mailing List</a>.</p>
 <p>We're located at <a href="https://www.google.com/maps/place/38+Jackson+St,+Hoboken,+NJ+07030">38 Jackson St.</a> in Hoboken, NJ.</p>
 <p>You can reach us at <a href="mailto:hello@makerbar.com">hello@makerbar.com</a>.</p>
+
+<p>Blog Posts! {% for post in site.posts %}
+<a href="{{ post.url }}">{{ post.title }}</a> {{post.tags}}
+{% endfor %}</p>
+
+<p>Twitter!</p>
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Makerbar" data-widget-id="504796990463426560">Tweets by @Makerbar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
