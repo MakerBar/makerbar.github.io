@@ -541,15 +541,11 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f0e7d5;
+  color: #000;
   font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
-  background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
-  background: -moz-linear-gradient(#2a2a29, #1c1c1c);
-  background: -o-linear-gradient(#2a2a29, #1c1c1c);
-  background: linear-gradient(#2a2a29, #1c1c1c);
+  background: #F0F0F0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -588,9 +584,9 @@ h3 {
 }
 
 a {
-  color: #ffcc00;
-  font-weight: 400;
-  text-decoration: none;
+ color: #fff;
+ font-weight: 400;
+ text-decoration: none;
 }
 a:hover {
   color: #ffeb9b;
@@ -613,10 +609,12 @@ strong {
 }
 
 .wrapper {
-  max-width: 650px;
+  max-width: 960px;
   margin: 0 auto;
+  margin-top:20px;
   position: relative;
   padding: 0 20px;
+  border: 1px solid #d3d1c7;
 }
 
 section img {
@@ -698,27 +696,54 @@ dt {
   font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
 }
+#branding{
+  margin:0 auto;
+  max-width:960px;
+}
+#branding .logo{
+  padding-top:20px;
+}
+#branding h1 a {
+  color:#FFF;
+  font-size:22px;
+  letter-spacing:1px;
+  line-height: 1em;
+  font-family: 'Segoe UI',Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+}
+#branding h2{
+  color:#7d716d;
+  font-size:11px;
+  letter-spacing:1px;    
+  line-height: 1em;
+  font-family: 'Segoe UI',Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+}
 
 #header {
   z-index: 100;
   left: 0;
   top: 0px;
-  height: 65px;
+  height: 125px;
   width: 100%;
-  position: fixed;
-  background: url(../images/nav-bg.gif) #353535;
-  border-bottom: 4px solid #434343;
+  background: #1e1b1a;
+  border-bottom: 5px solid #383332;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
-#header nav {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 0 10px;
-  margin: 6px auto;
+.nav {
+  display:block;
+  height:35px;
+  background-color:#322C2C;
 }
-#header nav li {
+.nav nav {
+  display:block;
+  height:35px;
+  max-width: 960px;
+  padding: 0 10px;
+}
+.nav nav li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   list-style: none;
@@ -728,7 +753,7 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-#header nav li a {
+.nav nav li a {
   color: white;
   border: 1px solid #5d910b;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
@@ -752,7 +777,7 @@ dt {
   display: inline-block;
   text-align: center;
 }
-#header nav li a:hover {
+.nav nav li a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
@@ -764,15 +789,15 @@ dt {
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
 }
-#header nav li.fork {
+.nav nav li.fork {
   float: left;
   margin-left: 0px;
 }
-#header nav li.downloads {
+.nav nav li.downloads {
   float: right;
   margin-left: 6px;
 }
-#header nav li.title {
+.nav nav li.title {
   float: right;
   margin-right: 10px;
   font-size: 11px;
